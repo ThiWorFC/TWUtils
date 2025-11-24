@@ -1,11 +1,26 @@
 Package: TWUtils
-Title: What the Package Does (One Line, Title Case)
+Title: Contains Useful Generic Functions
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Thierry", "Worch", , "thierry.worch@frieslandcampina.com", role = c("aut", "cre"))
+Description: The package regroups different useful functions that are used in many of my script and apps. Instead of having different versions of the same files, I've decided to centralize them for better version control. These functions include importing EyeQuestion file, structuring output tables for PowerPoint, etc.
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Imports: 
+    dplyr,
+    flextable,
+    forcats,
+    magrittr,
+    officer,
+    purrr,
+    readr,
+    readxl,
+    stringr,
+    tibble,
+    tidyr,
+    tidyselect

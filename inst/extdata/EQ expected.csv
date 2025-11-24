@@ -1,0 +1,105 @@
+Judge,Product,Session,Replica,Sequence,Codes confirmation,Yellow appearance,Thick appearance,Whey Odor,Sweet Odor,Sweet taste,Milky taste,Creamy taste,Whey taste,Remark Attribute 3,Thick and smooth mouthfeel,Remark Attribute 4,Creamy Aftertaste,Remark Attribute 5
+J01,C1 Cowbell SCC,1,1,1,1,1,1,2,1,2,1,1,2,NA,1,NA,1,NA
+J01,T1,1,1,1,1,2,2,1,2,1,2,2,1,NA,2,NA,4,NA
+J01,C2 Cowbell SCC,1,1,1,1,4,4,3,4,3,3,3,4,NA,3,NA,3,NA
+J01,C3 Cowbell SCC,1,1,1,1,3,3,4,3,4,4,4,3,NA,4,NA,2,NA
+J01,C1 Cowbell SCC,2,2,1,1,1,1,1,1,4,1,1,1,NA,1,NA,1,NA
+J01,T1,2,2,1,1,2,2,3,2,3,4,4,2,NA,2,NA,2,NA
+J01,C2 Cowbell SCC,2,2,1,1,3,3,2,3,1,2,2,4,NA,3,NA,3,NA
+J01,C3 Cowbell SCC,2,2,1,1,4,4,4,4,2,3,3,3,NA,4,NA,4,NA
+J02,C1 Cowbell SCC,1,1,1,1,1,1,1,4,4,1,1,1,NA,1,NA,1,NA
+J02,T1,1,1,1,1,2,2,4,3,2,3,3,4,NA,2,NA,2,NA
+J02,C3 Cowbell SCC,1,1,1,1,4,4,3,2,3,2,2,3,NA,3,NA,3,NA
+J02,C2 Cowbell SCC,1,1,1,1,3,3,2,1,1,4,4,2,NA,4,NA,4,NA
+J02,C1 Cowbell SCC,2,2,1,1,1,1,1,4,4,1,4,1,NA,4,NA,4,NA
+J02,T1,2,2,1,1,2,2,4,3,2,3,3,4,NA,3,NA,3,NA
+J02,C3 Cowbell SCC,2,2,1,1,4,4,3,2,3,2,2,3,NA,2,NA,2,NA
+J02,C2 Cowbell SCC,2,2,1,1,3,3,2,1,1,4,1,2,NA,1,NA,1,NA
+J03,C2 Cowbell SCC,1,1,1,1,3,3,3,2,4,3,1,2,NA,1,NA,1,NA
+J03,C3 Cowbell SCC,1,1,1,1,4,4,4,1,1,4,4,4,NA,4,NA,4,NA
+J03,T1,1,1,1,1,2,2,2,3,2,2,3,3,NA,3,NA,3,NA
+J03,C1 Cowbell SCC,1,1,1,1,1,1,1,4,3,1,2,1,NA,2,NA,2,NA
+J03,C2 Cowbell SCC,2,2,1,1,3,3,4,1,1,3,3,1,NA,4,NA,4,NA
+J03,C3 Cowbell SCC,2,2,1,1,4,4,3,2,2,4,4,2,NA,3,NA,3,NA
+J03,T1,2,2,1,1,2,2,1,4,4,2,2,4,NA,2,NA,2,NA
+J03,C1 Cowbell SCC,2,2,1,1,1,1,2,3,3,1,1,3,NA,1,NA,1,NA
+J04,C2 Cowbell SCC,1,1,1,1,4,4,4,3,1,4,4,2,NA,4,NA,4,NA
+J04,C3 Cowbell SCC,1,1,1,1,3,3,2,2,3,2,2,3,NA,2,NA,2,NA
+J04,C1 Cowbell SCC,1,1,1,1,1,1,1,4,4,1,1,1,NA,1,NA,1,NA
+J04,T1,1,1,1,1,2,2,3,1,2,3,3,4,NA,3,NA,3,NA
+J04,C1 Cowbell SCC,2,2,1,1,1,1,4,4,4,1,1,1,NA,1,NA,1,NA
+J04,C2 Cowbell SCC,2,2,1,1,4,4,1,3,3,2,2,3,NA,2,NA,2,NA
+J04,T1,2,2,1,1,2,2,3,1,1,4,4,2,NA,4,NA,4,NA
+J04,C3 Cowbell SCC,2,2,1,1,3,3,2,2,2,3,3,4,NA,3,NA,3,NA
+J05,C2 Cowbell SCC,1,1,1,1,3,3,3,3,3,2,2,2,NA,4,NA,2,NA
+J05,T1,1,1,1,1,2,2,2,1,1,4,4,3,NA,2,NA,4,NA
+J05,C1 Cowbell SCC,1,1,1,1,1,1,1,4,4,1,1,1,NA,1,NA,1,NA
+J05,C3 Cowbell SCC,1,1,1,1,4,4,4,2,2,3,3,4,NA,3,NA,3,NA
+J05,C3 Cowbell SCC,2,2,1,1,4,4,4,2,2,3,3,4,NA,3,NA,3,NA
+J05,C1 Cowbell SCC,2,2,1,1,1,1,1,4,4,1,1,1,NA,1,NA,1,NA
+J05,T1,2,2,1,1,2,2,2,1,1,4,4,2,NA,4,NA,4,NA
+J05,C2 Cowbell SCC,2,2,1,1,3,3,3,3,3,2,2,3,NA,2,NA,2,NA
+J06,C3 Cowbell SCC,1,1,1,1,4,4,4,4,1,4,4,4,NA,4,NA,4,NA
+J06,T1,1,1,1,1,2,2,2,2,3,3,3,3,NA,2,NA,2,NA
+J06,C2 Cowbell SCC,1,1,1,1,3,3,3,3,4,1,1,1,NA,3,NA,3,NA
+J06,C1 Cowbell SCC,1,1,1,1,1,1,1,1,2,2,2,2,NA,1,NA,1,NA
+J06,C3 Cowbell SCC,2,2,1,1,3,3,1,1,1,4,4,2,NA,4,NA,4,NA
+J06,T1,2,2,1,1,2,2,4,3,3,2,2,4,NA,2,NA,2,NA
+J06,C2 Cowbell SCC,2,2,1,1,4,4,2,2,2,3,3,3,NA,3,NA,3,NA
+J06,C1 Cowbell SCC,2,2,1,1,1,1,3,4,4,1,1,1,NA,1,NA,1,NA
+J07,T1,1,1,1,1,2,4,2,1,1,4,4,2,NA,4,NA,4,NA
+J07,C3 Cowbell SCC,1,1,1,1,3,3,3,3,2,3,3,4,NA,3,NA,3,NA
+J07,C1 Cowbell SCC,1,1,1,1,1,1,1,4,4,1,1,1,NA,1,NA,1,NA
+J07,C2 Cowbell SCC,1,1,1,1,4,2,4,2,3,2,2,3,NA,2,NA,2,NA
+J07,C3 Cowbell SCC,2,2,1,1,4,2,4,2,3,2,2,3,NA,2,NA,2,NA
+J07,C2 Cowbell SCC,2,2,1,1,3,3,3,3,2,3,3,4,NA,3,NA,3,NA
+J07,T1,2,2,1,1,2,4,2,1,1,4,4,2,NA,4,NA,4,NA
+J07,C1 Cowbell SCC,2,2,1,1,1,1,1,4,4,1,1,1,NA,1,NA,1,NA
+J08,C1 Cowbell SCC,1,1,1,1,1,1,1,4,4,1,1,1,NA,1,NA,1,NA
+J08,C2 Cowbell SCC,1,1,1,1,3,3,3,2,3,2,2,3,NA,3,NA,3,NA
+J08,T1,1,1,1,1,2,2,2,3,2,3,3,2,NA,2,NA,2,NA
+J08,C3 Cowbell SCC,1,1,1,1,4,4,4,1,1,4,4,4,NA,4,NA,4,NA
+J08,C2 Cowbell SCC,2,2,1,1,4,4,2,1,1,3,3,2,NA,4,NA,4,NA
+J08,C3 Cowbell SCC,2,2,1,1,2,2,3,2,3,2,2,3,NA,2,NA,2,NA
+J08,C1 Cowbell SCC,2,2,1,1,1,1,1,4,4,1,1,1,NA,1,NA,1,NA
+J08,T1,2,2,1,1,3,3,4,3,2,4,4,4,NA,3,NA,3,NA
+J09,C2 Cowbell SCC,1,1,1,1,3,3,4,1,2,3,3,4,NA,3,NA,3,NA
+J09,C1 Cowbell SCC,1,1,1,1,1,1,1,4,4,1,1,1,NA,1,NA,1,NA
+J09,C3 Cowbell SCC,1,1,1,1,4,4,3,2,3,2,2,3,NA,2,NA,2,NA
+J09,T1,1,1,1,1,2,2,2,3,1,4,4,2,NA,4,NA,4,NA
+J09,T1,2,2,1,1,2,4,2,3,3,4,4,2,NA,4,NA,4,NA
+J09,C3 Cowbell SCC,2,2,1,1,4,3,4,1,2,3,3,4,NA,3,NA,3,NA
+J09,C1 Cowbell SCC,2,2,1,1,1,1,1,4,4,1,1,1,NA,1,NA,1,NA
+J09,C2 Cowbell SCC,2,2,1,1,3,2,3,2,1,2,2,3,NA,2,NA,2,NA
+J10,C3 Cowbell SCC,1,1,1,1,4,4,3,2,2,3,3,3,NA,3,NA,3,NA
+J10,C1 Cowbell SCC,1,1,1,1,1,1,1,4,4,1,1,1,NA,1,NA,1,NA
+J10,T1,1,1,1,1,3,3,2,1,1,4,4,2,NA,4,NA,4,NA
+J10,C2 Cowbell SCC,1,1,1,1,2,2,4,3,3,2,2,4,NA,2,NA,2,NA
+J10,C1 Cowbell SCC,2,2,1,1,1,1,1,4,4,1,1,1,NA,1,NA,1,NA
+J10,C2 Cowbell SCC,2,2,1,1,3,3,4,3,2,3,3,4,NA,3,NA,3,NA
+J10,C3 Cowbell SCC,2,2,1,1,4,4,3,2,3,2,2,3,NA,2,NA,2,NA
+J10,T1,2,2,1,1,2,2,2,1,1,4,4,2,NA,4,NA,4,NA
+J11,T1,1,1,1,1,2,2,2,1,1,4,4,4,NA,4,NA,4,NA
+J11,C3 Cowbell SCC,1,1,1,1,3,3,4,2,2,3,3,3,NA,3,NA,3,NA
+J11,C2 Cowbell SCC,1,1,1,1,4,4,3,3,3,2,2,2,NA,2,NA,2,NA
+J11,C1 Cowbell SCC,1,1,1,1,1,1,1,4,4,1,1,1,NA,1,NA,1,NA
+J11,C2 Cowbell SCC,2,2,1,1,4,4,2,3,3,2,2,2,NA,2,NA,2,NA
+J11,T1,2,2,1,1,2,2,3,2,2,3,3,3,NA,3,NA,3,NA
+J11,C1 Cowbell SCC,2,2,1,1,1,1,1,4,4,1,1,1,NA,1,NA,1,NA
+J11,C3 Cowbell SCC,2,2,1,1,3,3,4,1,1,4,4,4,NA,4,NA,4,NA
+J12,C1 Cowbell SCC,1,1,1,1,1,1,1,4,4,1,1,1,NA,1,NA,1,NA
+J12,C2 Cowbell SCC,1,1,1,1,4,4,4,1,3,2,2,4,NA,2,NA,2,NA
+J12,C3 Cowbell SCC,1,1,1,1,3,3,3,2,2,3,3,3,NA,3,NA,3,NA
+J12,T1,1,1,1,1,2,2,2,3,1,4,4,2,NA,4,NA,4,NA
+J12,T1,2,2,1,1,2,2,2,3,2,3,3,2,NA,3,NA,3,NA
+J12,C3 Cowbell SCC,2,2,1,1,3,3,3,2,1,4,4,3,NA,4,NA,4,NA
+J12,C2 Cowbell SCC,2,2,1,1,4,4,4,1,3,2,2,4,NA,2,NA,2,NA
+J12,C1 Cowbell SCC,2,2,1,1,1,1,1,4,4,1,1,1,NA,1,NA,1,NA
+J13,T1,1,1,1,1,3,3,3,3,3,3,3,4,NA,3,NA,3,NA
+J13,C1 Cowbell SCC,1,1,1,1,1,1,1,4,4,1,1,1,NA,1,NA,1,NA
+J13,C3 Cowbell SCC,1,1,1,1,2,4,4,1,1,4,4,2,NA,4,NA,4,NA
+J13,C2 Cowbell SCC,1,1,1,1,4,2,2,2,2,2,2,3,NA,2,NA,2,NA
+J13,T1,2,2,1,1,3,3,4,3,3,4,4,2,NA,4,NA,4,NA
+J13,C1 Cowbell SCC,2,2,1,1,1,1,1,4,4,1,1,1,NA,1,NA,1,NA
+J13,C3 Cowbell SCC,2,2,1,1,4,4,3,2,2,2,2,3,NA,2,NA,2,NA
+J13,C2 Cowbell SCC,2,2,1,1,2,2,2,1,1,3,3,4,NA,3,NA,3,NA
