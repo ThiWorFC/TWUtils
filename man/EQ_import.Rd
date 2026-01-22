@@ -10,7 +10,7 @@ EQ_import(
   prod_order = NULL,
   attribute = TRUE,
   assessor = FALSE,
-  convert2num = FALSE
+  convert2num = TRUE
 )
 }
 \arguments{

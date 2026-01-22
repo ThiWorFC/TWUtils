@@ -51,7 +51,7 @@ dt_dark(
 A datatable object
 }
 \description{
-This function is a wrapper to {DT} and datatable() to control for different parameters such as white text in cell (for dark mode), colour coding, superscript, etc.
+This function is a wrapper to \code{DT} and datatable() to control for different parameters such as white text in cell (for dark mode), colour coding, superscript, etc.
 }
 \examples{
 NULL

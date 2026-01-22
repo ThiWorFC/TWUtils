@@ -2,6 +2,8 @@
 
 export(EQ_import)
 export(Fizz_import)
+export(dt_dark)
 export(formatting)
 export(tableformat)
 export(unfill_vec)
+importFrom(magrittr,"%>%")

@@ -1,3 +1,5 @@
+utils::globalVariables(c("Display", "Count", "Attribute", "Min"))
+
 #' Imports and Decode EyeQuestion Format Excel Sheets
 #'
 #' This function imports and decodes EQ files to be directly used in R or in Shiny Apps.
@@ -13,7 +15,7 @@
 #' @export
 #'
 #' @examples NULL
-EQ_import <- function(file_path, product=TRUE, prod_order=NULL, attribute=TRUE, assessor=FALSE, convert2num=FALSE){
+EQ_import <- function(file_path, product=TRUE, prod_order=NULL, attribute=TRUE, assessor=FALSE, convert2num=TRUE){
 
   # Import the dataset
   dataset <- readxl::read_excel(file_path, sheet="Data", n_max=100000) %>%

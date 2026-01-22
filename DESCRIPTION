@@ -9,7 +9,8 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
 Suggests: 
-    testthat (>= 3.0.0)
+    testthat (>= 3.0.0),
+    readr
 Config/testthat/edition: 3
 Imports: 
     dplyr,
@@ -19,7 +20,6 @@ Imports:
     magrittr,
     officer,
     purrr,
-    readr,
     readxl,
     stringr,
     tibble,

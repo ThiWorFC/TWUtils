@@ -1,6 +1,6 @@
 #' Create dark-mode styled DT table
 #'
-#' This function is a wrapper to {DT} and datatable() to control for different parameters such as white text in cell (for dark mode), colour coding, superscript, etc.
+#' This function is a wrapper to \code{DT} and datatable() to control for different parameters such as white text in cell (for dark mode), colour coding, superscript, etc.
 #'
 #' @param data Data frame to display
 #' @param color_target Integer vector. Column indices to color
@@ -18,6 +18,7 @@
 #'
 #' @return A datatable object
 #'
+#' @export
 #' @examples NULL
 dt_dark <- function(data,
                     color_target = NULL,
@@ -34,6 +35,18 @@ dt_dark <- function(data,
                     ...) {
 
   n_cols <- ncol(data)
+
+  # Handle position and names for columns
+  col_to_index <- function(cols, data) {
+    if (is.null(cols)) return(NULL)
+    if (is.character(cols)) match(cols, colnames(data))
+    else cols
+  }
+
+  color_target <- col_to_index(color_target, data)
+  color_source <- col_to_index(color_source, data)
+  hide_cols    <- col_to_index(hide_cols, data)
+  round_cols   <- col_to_index(round_cols, data)
 
   # Validation checks
   if (!is.null(color_target) && !is.null(color_source)) {
@@ -66,7 +79,7 @@ dt_dark <- function(data,
   }
 
   # Create base datatable
-  dt <- datatable(
+  dt <- DT::datatable(
     data,
     rownames = FALSE,
     selection = "none",
@@ -78,20 +91,34 @@ dt_dark <- function(data,
       autoWidth = auto_width,
       scrollX = scroll_x
     ),
+    class = 'cell-border stripe',
+    callback = DT::JS("
+      // Style the header
+      $('thead th').css({
+        'background-color': '#0094D9',
+        'color': '#ffffff',
+        'font-weight': 'bold'
+      });
+
+      // Style the body cells for more breathing room
+      $('tbody td').css({
+        'padding': '12px 25px'
+      });
+    "),
     ...
   )
 
   # Determine which columns get white text (all except color_target)
   if (!is.null(color_target)) {
-    white_cols <- setdiff(1:n_cols, c(color_target, hide_cols))
+    white_cols <- dplyr::setdiff(1:n_cols, c(color_target, hide_cols))
   } else {
-    white_cols <- setdiff(1:n_cols, hide_cols)
+    white_cols <- dplyr::setdiff(1:n_cols, hide_cols)
   }
 
   # Apply white text to non-colored columns
   if (length(white_cols) > 0) {
     dt <- dt %>%
-      formatStyle(
+      DT::formatStyle(
         columns = white_cols,
         color = '#ffffff',
         backgroundColor = 'transparent'
@@ -99,15 +126,16 @@ dt_dark <- function(data,
   }
 
   # Apply conditional coloring
+
   if (!is.null(color_target) && !is.null(color_source) &&
       !is.null(color_values) && !is.null(color_palette)) {
 
     for (i in seq_along(color_target)) {
       dt <- dt %>%
-        formatStyle(
+        DT::formatStyle(
           columns = color_target[i],
           valueColumns = color_source[i],
-          color = styleEqual(color_values, color_palette)
+          color = DT::styleEqual(color_values, color_palette)
         )
     }
   }
@@ -116,11 +144,13 @@ dt_dark <- function(data,
   if (!is.null(round_cols) && !is.null(round_digits)) {
     if (length(round_digits) == 1) {
       # Single value applies to all round_cols
-      dt <- dt %>% formatRound(round_cols, round_digits)
+      dt <- dt %>%
+        DT::formatRound(round_cols, round_digits)
     } else {
       # Apply different decimals to different columns
       for (i in seq_along(round_cols)) {
-        dt <- dt %>% formatRound(round_cols[i], round_digits[i])
+        dt <- dt %>%
+          DT::formatRound(round_cols[i], round_digits[i])
       }
     }
   }
