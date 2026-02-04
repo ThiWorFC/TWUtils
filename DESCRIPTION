@@ -28,4 +28,6 @@ Imports:
     shiny,
     writexl,
     tools,
-    zip
+    zip,
+    glue,
+    yaml
