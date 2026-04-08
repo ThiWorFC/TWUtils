@@ -74,7 +74,8 @@ EQ_import <- function(file_path, product=TRUE, prod_order=NULL, attribute=TRUE, 
     # Convert to Numeric
     if (convert2num){
       attr_num <- attribute %>%
-        dplyr::filter(!is.na(Min)) %>%
+        # dplyr::filter(!is.na(Min)) %>%
+        dplyr::filter(Datatype %in% c("scale","ordinal","interval","binary")) %>%
         dplyr::pull(Display)
       dataset <- dataset %>%
         dplyr::mutate(dplyr::across(tidyselect::all_of(attr_num), as.numeric))
