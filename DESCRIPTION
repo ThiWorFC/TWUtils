@@ -1,13 +1,12 @@
 Package: TWUtils
 Title: Contains Useful Generic Functions
-Version: 0.0.0.9000
+Version: 0.1.0
 Authors@R: 
     person("Thierry", "Worch", , "thierry.worch@frieslandcampina.com", role = c("aut", "cre"))
 Description: The package regroups different useful functions that are used in many of my script and apps. Instead of having different versions of the same files, I've decided to centralize them for better version control. These functions include importing EyeQuestion file, structuring output tables for PowerPoint, etc.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.3
 Suggests: 
     testthat (>= 3.0.0),
     readr
@@ -31,3 +30,4 @@ Imports:
     zip,
     glue,
     yaml
+Config/roxygen2/version: 8.1.1

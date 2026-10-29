@@ -2,7 +2,7 @@
 % Please edit documentation in R/EQ_import.R
 \name{EQ_import}
 \alias{EQ_import}
-\title{Imports and Decode EyeQuestion Format Excel Sheets}
+\title{Import and Decode EyeQuestion Format Excel Sheets}
 \usage{
 EQ_import(
   file_path,
@@ -14,24 +14,49 @@ EQ_import(
 )
 }
 \arguments{
-\item{file_path}{The path to the file to import}
+\item{file_path}{The path to the \code{.xlsx} file to import.}
 
-\item{product}{Boolean: should the Products be decoded?}
+\item{product}{Boolean: should the Products be decoded (product codes replaced by product names)?}
 
-\item{prod_order}{NULL by default: provide the products' order in the factor}
+\item{prod_order}{\code{NULL} by default (order of the Products sheet); otherwise a vector of product codes
+giving the order of the factor levels.}
 
-\item{attribute}{Boolean: should the Attributes be decoded?}
+\item{attribute}{Boolean: should the Attributes be decoded (question codes replaced by attribute names)?}
 
-\item{assessor}{Boolean: should the Assessors be decoded?}
+\item{assessor}{Boolean: should the Assessors be decoded (assessor codes replaced by assessor names)?}
 
-\item{convert2num}{Boolean: converts variables to numerical (when Min/Max is not empty in the Attributes tab)}
+\item{convert2num}{Boolean: convert the attributes to numeric according to their \code{Datatype} in the
+Attributes sheet (\code{scale}, \code{ordinal}, \code{interval} and \code{binary}). Only used when \code{attribute = TRUE}.}
 }
 \value{
-The re-coded dataset
+The decoded dataset, as a tibble.
 }
 \description{
-This function imports and decodes EQ files to be directly used in R or in Shiny Apps.
+Imports an EyeQuestion (EQ) export (\code{.xlsx}) and decodes it, so that it can be used directly in R or in
+Shiny apps. The sheets \code{Data}, \code{Products}, \code{Assessors} and \code{Attributes} are read as needed and passed to
+\code{\link[=EQ_decode]{EQ_decode()}}, which describes the transformation in detail.
+}
+\details{
+Only the sheets that are decoded are read: \code{Products} when \code{product = TRUE}, \code{Assessors} when
+\code{assessor = TRUE} and \code{Attributes} when \code{attribute = TRUE}. The \code{Data} sheet is always read (at most
+100,000 rows). Column 1 of \code{Data} must be the assessor and column 2 the product.
 }
 \examples{
-NULL
+if (requireNamespace("writexl", quietly = TRUE)) {
+  sheets <- list(
+    Data = data.frame(Judge = c("J01", "J01", "J02", "J02"),
+                      Product = c("P01", "P02", "P01", "P02"),
+                      Q3 = c(5, 7, 6, 8)),
+    Products = data.frame(Product = c("P01", "P02"), Name = c("Cheese A", "Cheese B")),
+    Attributes = data.frame(Attribute = "Q3", Display = "Firmness", Datatype = "ordinal"))
+  file <- tempfile(fileext = ".xlsx")
+  writexl::write_xlsx(sheets, file)
+
+  EQ_import(file)
+  EQ_import(file, product = FALSE, attribute = FALSE)  # keep the codes
+}
+}
+\seealso{
+\code{\link[=EQ_decode]{EQ_decode()}} for the transformation, \code{\link[=EQ_import_tables]{EQ_import_tables()}} when the tables come from the EQ API
+instead of a file.
 }
